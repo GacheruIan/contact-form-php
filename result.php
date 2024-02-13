@@ -24,9 +24,19 @@
     echo"<h2>Dear, $fullName admission-Number: $registration </h2><br>";
     echo"<h3>sum of units done is: $sum </h3>";
     echo"<h3>average score therefore is: $average<h3>";
-    echo"<h4>a copy of the info has been sent to your contact: <u>$phoneNumber</u> <i>Thankyou!</i><h4>";
+    echo"<h4>a copy of the info has been sent to your contact: <u>$phoneNumber</u> <i>Thankyou!</i><h4><br>";
 
-
+    if($average >= 0 && $average <= 49){
+        echo "<h1><u>Fail!</u></h1>";
+    }elseif($average >= 50 && $average <=59){
+        echo "<h1><u>Pass</u></h1>";
+    }elseif($average >= 50 && $average <=59){
+        echo "<h1><u>Credit</u></h1>";
+    }elseif($average >= 70 && $average <=100){
+        echo "<h1><u>Distinction</u></h1>";
+    }else{
+        echo "<h3><i>Err loading results.....</i></h3>";
+    }
 
     ?>  
 </body>
