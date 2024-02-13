@@ -49,7 +49,7 @@ body {
 .user-input-box select {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px; /* Add margin for bottom space */
+    margin-bottom: 10px; 
     border: 1px solid #d3cccc;
     border-radius: 4px;
 }
